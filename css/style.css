@@ -71,6 +71,9 @@ header .container{
 .add-to-cart .fa-cart-shopping{
     font-size: 22px;
 }
+.fa-xmark{
+    display: none;
+}
 
 /*==========================
     Banner section start
@@ -320,4 +323,199 @@ footer .container{
     color: #FFF;
     border-radius: 50px;
     font-size: 18px;
+}
+
+
+/* For mobile device Responsive */
+@media (min-width: 320px) and (max-width: 576px){
+   
+/*   Header section start   */
+header{
+    padding: 30px 15px;
+}
+header .container {
+    position: relative;
+}
+.logos .fa-bars {
+    display: block;
+    font-size: 18px;
+}
+.logos .logo {
+    position: absolute;
+    font-size: 18px;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    width: 66%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.list-elements.active{
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.list-elements{
+    position: fixed;
+    top: 0;
+    left: -80%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #AAA;
+    color: #000 !important;
+    z-index: 100;
+    box-shadow: 20px 0px 40px rgb(0 0 0 / 55%);
+    transition: all 0.3s ease-in-out;
+}
+.list-elements ul li {
+    display: block;
+    margin-bottom: 34px;
+    margin-right: 0;
+}
+.add-to-cart .fa-cart-shopping {
+    font-size: 18px;
+}
+i.fa-solid.fa-xmark {
+    display: block;
+    position: absolute;
+    top: 4%;
+    right: 12%;
+    font-size: 30px;
+  }
+
+/*   Banner section start   */
+.banner-section{
+    padding: 30px 10px;
+}
+.banner-section .container {
+    flex-direction: column-reverse;
+    gap: 0px;
+}
+.banner-details {
+    width: 100%;
+    text-align: center;
+}
+.banner-details h1 {
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+}
+.banner-details p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    padding-right: 0;
+}
+.banner-img {
+    width: 100%;
+    padding: 20px 50px;
+}
+
+/*   Logo section start   */
+.logo-section{
+    padding: 50px 10px;
+}
+.logo-section .container {
+    justify-content: center;
+    row-gap: 20px !important;
+    gap: 0;
+    padding: 25px 0;
+    flex-wrap: wrap;
+    border-image: none;
+}
+.logo-img {
+    width: 25%;
+    text-align: center;
+}
+.logo-img img {
+    width: 70px;
+}
+
+/*   product section start   */
+.product-section {
+    padding: 60px 14px;
+}
+.all-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 20px;
+}
+.product-details {
+    padding: 17px 15px 27px 14px;
+  }
+.product-details h2 {
+    font-weight: 700;
+}
+.product-details h3 {
+    font-weight: 700;
+}
+.product-info {
+    width: 100%;
+}
+.product-info p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+}
+.all-product-list {
+    margin-top: 32px;
+}
+
+/*  feature section start   */
+.feature-section {
+    padding: 7px 15px 50px;
+}
+.feature-section .container {
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+.feature-img {
+    width: 100%;
+}
+.feature-details {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.feature-details h1 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+}
+.feature-details p {
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 55px
+  }
+
+/*  footer section start   */
+footer{
+    padding: 55px 0;
+}
+.footer-details h1 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+.footer-details p {
+    font-size: 12px;
+}
+.footer-details ul {
+    margin-top: 18px;
+}
+.footer-details ul li {
+    margin: 0 4px;
+}
+.footer-details ul li i {
+    width: 36px;
+    height: 36px;
+    line-height: 37px;
+    font-size: 16px;
+}
+
+
 }
