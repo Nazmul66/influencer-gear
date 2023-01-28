@@ -338,7 +338,7 @@ header .container {
 }
 .logos .fa-bars {
     display: block;
-    font-size: 18px;
+    font-size: 22px;
 }
 .logos .logo {
     position: absolute;
@@ -363,7 +363,7 @@ header .container {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #AAA;
+    background: #FFF;
     color: #000 !important;
     z-index: 100;
     box-shadow: 20px 0px 40px rgb(0 0 0 / 55%);
